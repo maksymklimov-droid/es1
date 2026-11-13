@@ -18,7 +18,7 @@ public class Prodotto {
     }
 
     public String toString(){
-        String txt = "nome: " + nome + "\nprezzo: " + prezzo+ "\nfornitore: " + fornitore.getNome();
+        String txt = "nome: " + nome + "\n prezzo: " + prezzo+ "\n fornitore: " + fornitore.getNome();
         return txt;
     }
 }
