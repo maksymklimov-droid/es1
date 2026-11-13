@@ -9,5 +9,16 @@ public class Prodotto {
         this.fornitore = fornitore;
     }
 
+    public double getPrezzo() {
+        return prezzo;
+    }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String toString(){
+        String txt = "nome: " + nome + "\nprezzo: " + prezzo+ "\nfornitore: " + fornitore.getNome();
+        return txt;
+    }
 }
