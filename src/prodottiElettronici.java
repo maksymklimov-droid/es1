@@ -10,14 +10,6 @@ public class prodottiElettronici extends Prodotto {
         return garanzia;
     }
 
-    public String getNome(){
-        return super.getNome();
-    }
-
-    public double getPrezzo(){
-        return super.getPrezzo();
-    }
-
     public void verificaGaranzia(){
         if(garanzia > 12){
             super.setPrezzo(10);
