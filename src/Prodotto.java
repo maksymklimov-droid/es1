@@ -17,8 +17,10 @@ public class Prodotto {
         return nome;
     }
 
-    public void setPrezzo(double aggiunta) {
-        this.prezzo += aggiunta;
+    public void setPrezzo(double prezzo) {
+        if(prezzo > 0) {
+            this.prezzo = prezzo;
+        }
     }
 
     public String toString(){

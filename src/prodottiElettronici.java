@@ -12,7 +12,8 @@ public class prodottiElettronici extends Prodotto {
 
     public void verificaGaranzia(){
         if(garanzia > 12){
-            super.setPrezzo(10);
+            double p = getPrezzo() + 10;
+            super.setPrezzo(p);
         }
     }
 

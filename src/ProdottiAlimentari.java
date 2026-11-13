@@ -8,8 +8,11 @@ public class ProdottiAlimentari extends Prodotto {
         this.dataScadenza = dataScadenza;
     }
 
-    public boolean verificaDataScadenza(){
-        return dataScadenza.isAfter(LocalDate.now());
+    public void verificaDataScadenza(){
+        if(!LocalDate.now().isBefore(dataScadenza.minusDays(3))){
+            double pr = getPrezzo()-getPrezzo()*0.2;
+            super.setPrezzo(pr);
+        }
     }
 
     @Override
