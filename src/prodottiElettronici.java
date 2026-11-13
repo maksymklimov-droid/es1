@@ -1,0 +1,31 @@
+public class prodottiElettronici extends Prodotto {
+    private int garanzia;
+
+    public prodottiElettronici(String nome, double prezzo, Fornitore fornitore, int garanzia) {
+        super(nome, prezzo, fornitore);
+        this.garanzia = garanzia;
+    }
+
+    public int getGaranzia() {
+        return garanzia;
+    }
+
+    public String getNome(){
+        return super.getNome();
+    }
+
+    public double getPrezzo(){
+        return super.getPrezzo();
+    }
+
+    public void verificaGaranzia(){
+        if(garanzia > 12){
+            super.setPrezzo(10);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "garanzia=" + garanzia + "\nnome: " + super.getNome() + "\nprezzo: " + super.getPrezzo();
+    }
+}

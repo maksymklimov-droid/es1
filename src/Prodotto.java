@@ -17,6 +17,10 @@ public class Prodotto {
         return nome;
     }
 
+    public void setPrezzo(double aggiunta) {
+        this.prezzo += aggiunta;
+    }
+
     public String toString(){
         String txt = "nome: " + nome + "\n prezzo: " + prezzo+ "\n fornitore: " + fornitore.getNome();
         return txt;
