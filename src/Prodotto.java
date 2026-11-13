@@ -8,4 +8,6 @@ public class Prodotto {
         this.prezzo = prezzo;
         this.fornitore = fornitore;
     }
+
+
 }
