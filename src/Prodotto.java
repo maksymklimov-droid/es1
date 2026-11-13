@@ -10,4 +10,20 @@ public class Prodotto {
     }
 
 
+    @Override
+    public String toString() {
+        return "Prodotto{" +
+                "nome='" + nome + '\'' +
+                ", prezzo=" + prezzo +
+                ", fornitore=" + fornitore +
+                '}';
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPrezzo() {
+        return prezzo;
+    }
 }
