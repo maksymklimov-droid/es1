@@ -14,9 +14,7 @@ public class ProdottiAlimentari extends Prodotto {
 
     @Override
     public String toString() {
-        return "ProdottiAlimentari{" +
-                "dataScadenza=" + dataScadenza +
-                '}';
+        return super.toString() + "\nData di scadenza: "+ dataScadenza;
     }
 
     public LocalDate getDataScadenza() {
