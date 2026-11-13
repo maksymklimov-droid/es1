@@ -26,6 +26,6 @@ public class prodottiElettronici extends Prodotto {
 
     @Override
     public String toString() {
-        return "garanzia=" + garanzia + "\nnome: " + super.getNome() + "\nprezzo: " + super.getPrezzo();
+        return super.toString() + "\n garanzia: " + garanzia;
     }
 }

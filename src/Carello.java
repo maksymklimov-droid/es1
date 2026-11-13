@@ -1,11 +1,9 @@
 import java.util.ArrayList;
 
 public class Carello {
-    private int nUnivoco;
     private ArrayList<Prodotto> prodotti ;
 
-    public Carello(int nUnivoco){
-        this.nUnivoco = nUnivoco;
+    public Carello(){
         prodotti = new ArrayList<>();
     }
 
@@ -13,12 +11,12 @@ public class Carello {
         prodotti.add(prodotto);
     }
 
-    public int getnUnivoco() {
-        return nUnivoco;
-    }
-
     @Override
     public String toString() {
-        return "Carello: " + "\n nUnivoco " + nUnivoco + "\n prodotti " + prodotti ;
+        String txt = "Carello: ";
+        for(Prodotto prodotto : prodotti){
+            txt += "\n" + prodotto;
+        }
+        return txt;
     }
 }
